@@ -1,17 +1,20 @@
 <html>
 	<head>
+
 		<style>
 		
 			
 			body{
 				background: linear-gradient(30grad, #ffc, #ccf);
-				
+				font-family: "Verdana", Times, serif;
+				font-size: 1.5em;
+				line-height: 1.8;
 			}
 		
 			.main{
 				padding-top: 60pt;
 				min-height: 100%;
-				font-size: 20pt;
+				
 				width: 100%;
 				display: flex;
 				word-wrap: break-word;
@@ -25,12 +28,12 @@
 				padding: 20px 10%;
 			}
 			.output{
-				font-size: 35pt;
+				font-size: 30pt;
 				text-align: center;
 				max-width: 500pt;
 			}
 			input{
-				font-size: 35pt;
+				font-size: 2em;
 				width: 100%;
 			}
 			.fib{
@@ -43,6 +46,10 @@
 			}
 			hr{
 				margin-top: 70pt;
+			}
+			.text-hr{
+				max-width: 800px;
+				margin: 20pt;
 			}
 		</style>
 	</head>
@@ -58,7 +65,7 @@
 					<div id = "fib"></div>
 				</div>
 			</form>	
-			<div><hr>One of the special number systems used in expert
+			<div class="text-hr"><hr>One of the special number systems used in expert
 						systems and neural networks is Fibonacci.
 						The basis of this system are the numbers that make up
 						the Fibonacci sequence:<br>
