@@ -2,35 +2,84 @@
 	<head>
 		<style>
 		
-			html{
-				min-weight: 100%;
-			}
+			
 			body{
 				background: linear-gradient(30grad, #ffc, #ccf);
 				
 			}
 		
 			.main{
-				padding: 20px;
+				padding-top: 60pt;
+				min-height: 100%;
 				font-size: 20pt;
-				max-width: 500px;
+				width: 100%;
+				display: flex;
+				word-wrap: break-word;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				text-align: center;
+			}
+			.main div{
 				
+				padding: 20px 10%;
+			}
+			.output{
+				font-size: 35pt;
+				text-align: center;
+				max-width: 500pt;
 			}
 			input{
-				font-size: 20pt;
+				font-size: 35pt;
+				width: 100%;
 			}
 			.fib{
 				
+			}
+			.my{
+				width: 70%;
+				padding-bottom: 50pt;
+
+			}
+			hr{
+				margin-top: 70pt;
 			}
 		</style>
 	</head>
 	<body>
 		<div class = "main">
+			<div>For convertation from decimal notation to fibonacci system,
+				just enter any number.</div>
 			<form name = "my">
-				<input id = "numberInput" name = "numberInput" value = "">
-				<div>output:</div>
-				<div id = "fib"></div>
+
+				<input autofocus id = "numberInput" name = "numberInput" value = "">
+				<div class="output">
+					<div>output:</div>
+					<div id = "fib"></div>
+				</div>
 			</form>	
+			<div><hr>One of the special number systems used in expert
+						systems and neural networks is Fibonacci.
+						The basis of this system are the numbers that make up
+						the Fibonacci sequence:<br>
+						1, 2, 3, 5, 8, 13, 21, 34 ...<br>
+						Each number in this sequence is formed as the sum 
+						of the two previous ones:<br>
+						3 + 5 = 8, 5 + 8 = 13 etc.<br>
+						To record a certain number in this system,
+						two states of each category are sufficient,
+						conditionally - 0 and 1. Let us give examples
+						of writing numbers in the Fibonacci system:<br>
+
+						3710 = 34 + 3 = 1 • g7 + 0 • g6 + 0 • g5 + 0 
+						• g4 + 0 • g3 + 1 • g2 + 0 • g1 + 0 • g0 = 10000100;<br>
+
+						2510 = 21 + 3 + 1 = 1 • g6 + 0 • g5 + 0 • g4 + 0 • g3 + 
+						1 • g2 + 0 • g1 + 1 • g0 = 1000101.<br>
+						An interesting feature of the Fibonacci number 
+						system is that it does not have units simultaneously
+						installed in adjacent bits, which makes it easier 
+						to implement data protection from interference. </div>
 		</div>
 			
 		<script src="fibonachi.js"></script>
